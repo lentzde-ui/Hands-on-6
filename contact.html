@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Your Greece Trip - Discover Greece</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Discover Greece</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Greece</a></li>
+          <li><a href="destinations.html">Places to Go</a></li>
+          <li><a href="reviews.html">Traveler Reviews</a></li>
+          <li><a href="contact.html" class="active">Plan Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="contact-header">
+      <h1>Plan Your Greek Getaway</h1>
+      <p>Tell us your dream Greek places to visit and we'll help build your itinerary!</p>
+    </section>
+
+    <div class="contact-container">
+      <!-- Sends submissions directly to delaneylentz@icloud.com -->
+      <form class="contact-form" action="https://formsubmit.co/delaneylentz@icloud.com" method="POST">
+        
+        <!-- FormSubmit Options -->
+        <input type="hidden" name="_subject" value="New Greece Trip Inquiry!">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="Name" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="Email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="island">Preferred Places to Visit</label>
+          <select id="island" name="Preferred Destination">
+            <option value="Santorini & Cyclades">Santorini & Cyclades</option>
+            <option value="Athens & Ancient Ruins">Athens & Ancient Ruins</option>
+            <option value="Zakynthos & Ionian Islands">Zakynthos & Ionian Islands</option>
+            <option value="Crete">Crete</option>
+            <option value="Custom Itinerary">Multiple / Custom Itinerary</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Travel Dates & Notes</label>
+          <textarea id="message" name="Message" rows="5" placeholder="Let us know when you plan to visit Greece..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Submit Inquiry</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Discover Greece Travel. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
